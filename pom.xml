@@ -14,7 +14,7 @@
     <name>combined</name>
     <description>PayPro Combined</description>
     <properties>
-        <java.version>11</java.version>
+        <java.version>1.8</java.version>
         <apache-common-lang.version>3.8.1</apache-common-lang.version>
         <spring-cloud.version>Greenwich.RELEASE</spring-cloud.version>
     </properties>
