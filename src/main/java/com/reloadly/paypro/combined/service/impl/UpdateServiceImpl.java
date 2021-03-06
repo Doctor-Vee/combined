@@ -21,7 +21,7 @@ public class UpdateServiceImpl implements UpdateService {
     @Override
     public String processCustomerDetailsUpdate(String accountNumber, UpdateRequest updateRequest) {
         Optional<User> userOptional = userRepository.findByAccountNumber(accountNumber);
-        if (userOptional.isEmpty()) {
+        if (!userOptional.isPresent()) {
             throw new UnauthorisedAccessException("Unauthorised Access - User not found");
         }
         User user = userOptional.get();
